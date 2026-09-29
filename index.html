@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristian Ramón Noguera · Desarrollador de software</title>
+  <meta name="description" content="Portfolio de Cristian Ramón Noguera, desarrollador de software: aplicaciones móviles nativas iOS y Android, backend y sistemas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230d1b2a'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' fill='%237ec9ff' text-anchor='middle'%3ECR%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <a class="nav__brand" href="#top">CRN</a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#stack">Stack</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#formacion">Formación</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <div class="nav__icons">
+    <a href="https://github.com/dunkurunku" target="_blank" rel="noopener" aria-label="GitHub" class="icon-btn">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+    </a>
+    <button class="icon-btn nav__burger" id="burger" aria-label="Menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <canvas class="hero__rain" id="rain" aria-hidden="true"></canvas>
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <p class="eyebrow">Disponible para prácticas y primer empleo</p>
+        <h1 class="hero__title">¡Hola! Soy<br><span class="accent">Cristian Ramón</span></h1>
+        <p class="hero__sub">Desarrollador de software · iOS / Android / backend · Granada, España</p>
+        <p class="hero__desc">
+          Estudiante de último curso de Ingeniería Informática en la Universidad de Granada.
+          Desarrollo aplicaciones móviles nativas para iOS y Android, su backend y el servidor que las sostiene,
+          con experiencia real en producción en una empresa de peritaje informático.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary corner" href="assets/Curriculum-Cristian-Ramon-Noguera.pdf" download>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v3h16v-3"/></svg>
+            Descargar CV
+          </a>
+          <a class="btn" href="#contacto">Contáctame</a>
+          <a class="btn" href="https://github.com/dunkurunku" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <figure class="hero__photo corner">
+        <img src="assets/foto.png" alt="Fotografía de Cristian Ramón Noguera">
+      </figure>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section" id="stack">
+    <div class="container">
+      <p class="section__label">01 · Stack tecnológico</p>
+
+      <h3 class="group-title">Móvil</h3>
+      <div class="stack-grid">
+        <article class="stack-card corner"><span class="stack-card__n">01</span><h4>Swift</h4><p>SwiftUI · Core Data · Core Location</p></article>
+        <article class="stack-card corner"><span class="stack-card__n">02</span><h4>Kotlin</h4><p>Jetpack Compose · Room · Retrofit</p></article>
+        <article class="stack-card corner"><span class="stack-card__n">03</span><h4>iOS</h4><p>Tareas en segundo plano · App Attest · Xcode</p></article>
+        <article class="stack-card corner"><span class="stack-card__n">04</span><h4>Android</h4><p>Play Integrity · Play Billing · Android Studio</p></article>
+        <article class="stack-card corner"><span class="stack-card__n">05</span><h4>Tiendas</h4><p>App Store Connect · Google Play Console</p></article>
+      </div>
+
+      <h3 class="group-title">Backend y sistemas</h3>
+      <div class="stack-grid">
+        <article class="stack-card corner"><span class="stack-card__n">06</span><h4>PHP</h4><p>APIs REST · MySQL</p></article>
+        <article class="stack-card corner"><span class="stack-card__n">07</span><h4>Node.js</h4><p>Socket.IO · LiveKit</p></article>
+        <article class="stack-card corner"><span class="stack-card__n">08</span><h4>Linux</h4><p>Nginx · TLS · cron · despliegue y rollback</p></article>
+        <article class="stack-card corner"><span class="stack-card__n">09</span><h4>Servicios</h4><p>Stripe · Firebase · Git / GitHub</p></article>
+      </div>
+
+      <h3 class="group-title">Datos, web y lenguajes</h3>
+      <div class="stack-grid">
+        <article class="stack-card corner"><span class="stack-card__n">10</span><h4>Python</h4><p>Análisis de datos · Aprendizaje automático</p></article>
+        <article class="stack-card corner"><span class="stack-card__n">11</span><h4>C / C++</h4><p>Estructuras de datos · MPI · Concurrencia</p></article>
+        <article class="stack-card corner"><span class="stack-card__n">12</span><h4>Java</h4><p>POO · Diseño de software</p></article>
+        <article class="stack-card corner"><span class="stack-card__n">13</span><h4>Web</h4><p>React · Vite · Tailwind · HTML / CSS</p></article>
+        <article class="stack-card corner"><span class="stack-card__n">14</span><h4>SQL</h4><p>Modelado · Consultas · MySQL</p></article>
+        <article class="stack-card corner"><span class="stack-card__n">15</span><h4>Otros</h4><p>Bash · Ensamblador x86 · R · Prolog · CLIPS</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="section" id="proyectos">
+    <div class="container">
+      <p class="section__label">02 · Proyectos</p>
+      <p class="section__note">Productos desarrollados en GeoNotary S.L. El código es propiedad de la empresa y está en repositorios privados; aquí explico qué hace cada uno y qué parte he hecho yo.</p>
+
+      <div class="projects">
+        <article class="project corner">
+          <div class="project__media project__media--geo" aria-hidden="true"><span>GeoNotary</span></div>
+          <div class="project__body">
+            <p class="project__label">Proyecto 01 · publicado</p>
+            <h3>GeoNotary</h3>
+            <p>Aplicación que certifica la ubicación del usuario con validez judicial: registro con sellado temporal, resumen criptográfico y un modelo de identidad basado en los patrones de movimiento. Se usa en defensa legal y en acreditación de residencia fiscal.</p>
+            <ul class="project__mine">
+              <li>Cliente Android desde cero hasta su publicación en Google Play, con paridad funcional con la app iOS.</li>
+              <li>Rechazo de ubicaciones simuladas y verificación de integridad con Play Integrity.</li>
+              <li>En iOS, corrección de la pérdida de registros y de los cierres por memoria en segundo plano.</li>
+            </ul>
+            <div class="tags"><span>Kotlin</span><span>Jetpack Compose</span><span>Swift</span><span>SwiftUI</span><span>PHP</span></div>
+            <div class="project__links">
+              <a class="btn btn--small" href="https://apps.apple.com/es/app/geonotary/id6742685214" target="_blank" rel="noopener">App Store</a>
+              <a class="btn btn--small" href="https://play.google.com/store/apps/details?id=com.geonotary.app" target="_blank" rel="noopener">Google Play</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project corner">
+          <div class="project__media project__media--tesla" aria-hidden="true"><span>TeslAI</span></div>
+          <div class="project__body">
+            <p class="project__label">Proyecto 02 · producto interno</p>
+            <h3>TeslAI</h3>
+            <p>App iOS que enciende el climatizador de un Tesla antes de que el usuario llegue al coche. Detecta la aproximación con la ubicación del móvil y decide cuándo activar el vehículo con un motor de decisión multiseñal.</p>
+            <ul class="project__mine">
+              <li>El producto llevaba meses sin funcionar de forma fiable. Analicé en Python más de mil sesiones reales y demostré que el problema no estaba en el algoritmo, sino en la ejecución en segundo plano de iOS.</li>
+              <li>Rediseñé la planificación de despertares del sistema y el climatizador se activó en campo por primera vez.</li>
+              <li>Tres informes técnicos de diagnóstico para dirección.</li>
+            </ul>
+            <div class="tags"><span>Swift</span><span>Core Location</span><span>Segundo plano</span><span>Python</span></div>
+          </div>
+        </article>
+
+        <article class="project corner">
+          <div class="project__media project__media--wp" aria-hidden="true"><span>WhatsPericial</span></div>
+          <div class="project__body">
+            <p class="project__label">Proyecto 03 · producto interno</p>
+            <h3>WhatsPericial</h3>
+            <p>Certificación de conversaciones de WhatsApp como prueba pericial: adquisición asistida de la conversación, integridad de la evidencia y generación del informe.</p>
+            <ul class="project__mine">
+              <li>Port completo de la app iOS a Android, incluida la sesión asistida en tiempo real.</li>
+              <li>Backend PHP y Node.js: fallos de escala con conversaciones grandes, integridad SHA-256 y cadena de custodia.</li>
+              <li>Auditoría de seguridad: autenticación de endpoints, firma del webhook de Stripe y credenciales fuera del código.</li>
+              <li>Web corporativa en React, Vite y Tailwind.</li>
+            </ul>
+            <div class="tags"><span>Kotlin</span><span>Swift</span><span>PHP</span><span>Node.js</span><span>Stripe</span><span>React</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section class="section" id="experiencia">
+    <div class="container">
+      <p class="section__label">03 · Experiencia</p>
+      <div class="table corner">
+        <div class="table__head"><span>Periodo</span><span>Puesto</span><span>Detalle</span></div>
+        <div class="table__row">
+          <span class="table__period">Mar 2026 — actualidad</span>
+          <div>
+            <h3>Desarrollador de software · prácticas</h3>
+            <p class="muted">GeoNotary S.L. · Granada</p>
+          </div>
+          <div>
+            <p>Desarrollo de aplicaciones móviles nativas para iOS y Android hasta su publicación, servicios de backend y administración del servidor de producción. Diagnóstico de fallos sobre datos reales, revisión de seguridad y colaboración en peritajes informáticos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMACIÓN -->
+  <section class="section" id="formacion">
+    <div class="container">
+      <p class="section__label">04 · Formación</p>
+      <div class="table corner">
+        <div class="table__head"><span>Periodo</span><span>Titulación</span><span>Detalle</span></div>
+        <div class="table__row">
+          <span class="table__period">2022 — 2027 (previsto)</span>
+          <div>
+            <h3>Grado en Ingeniería Informática</h3>
+            <p class="muted">Universidad de Granada · ETSIIT</p>
+          </div>
+          <div>
+            <p>Mención en Computación y Sistemas Inteligentes. Prácticas de empresa (12 ECTS) en GeoNotary S.L. Optativa de Derecho Informático: RGPD, prueba electrónica y cadena de custodia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section class="section" id="sobre-mi">
+    <div class="container about">
+      <div class="about__text">
+        <p class="section__label">05 · Sobre mí</p>
+        <h2>Del código al<br>producto en producción</h2>
+        <p>Empecé las prácticas en GeoNotary en marzo de 2026 y desde el primer día el trabajo llegaba hasta producción: la app que tocaba por la mañana la usaban clientes por la tarde. En un equipo de tres personas no hay departamentos, así que he pasado por móvil, backend, servidor y seguridad.</p>
+        <p>Lo que más me ha enseñado este tiempo es a medir antes de opinar. Un producto llevaba meses fallando y todo el mundo asumía que era el algoritmo. Analizando los datos reales resultó que nueve de cada diez fallos eran otra cosa. Ver el resultado funcionar después de semanas de análisis es lo que más me ha gustado de este trabajo.</p>
+        <p>Trabajo en una empresa cuyo software acaba delante de un juez, y eso me ha hecho más cuidadoso al afirmar que algo funciona. Busco un equipo donde seguir aprendiendo con gente que revise mi código y discuta decisiones.</p>
+      </div>
+      <aside class="facts">
+        <div class="fact corner"><span class="fact__k">Perfil</span><span class="fact__v">Desarrollador de software · iOS / Android / backend</span></div>
+        <div class="fact corner"><span class="fact__k">Ubicación</span><span class="fact__v">Granada, España</span></div>
+        <div class="fact corner"><span class="fact__k">Idiomas</span><span class="fact__v">Español nativo · Inglés B2</span></div>
+        <div class="fact corner"><span class="fact__k">Disponibilidad</span><span class="fact__v">Prácticas y primer empleo · remoto o Granada</span></div>
+      </aside>
+    </div>
+
+    <div class="container">
+      <h3 class="group-title">Cómo trabajo</h3>
+      <div class="how-grid">
+        <div class="how corner"><h4>Medir antes de opinar</h4><p>Diagnostico sobre datos reales de producción, no sobre suposiciones.</p></div>
+        <div class="how corner"><h4>Hasta producción</h4><p>Un cambio no está hecho hasta que está desplegado y con plan de vuelta atrás.</p></div>
+        <div class="how corner"><h4>Rigor con la evidencia</h4><p>Integridad, trazabilidad y reproducibilidad como requisitos, no como extras.</p></div>
+        <div class="how corner"><h4>Explicar lo técnico</h4><p>Informes claros para quien decide sin ser técnico.</p></div>
+        <div class="how corner"><h4>Seguridad por defecto</h4><p>Credenciales fuera del código, firmas verificadas y endpoints autenticados.</p></div>
+        <div class="how corner"><h4>Aprender haciendo</h4><p>Cada proyecto nuevo ha sido una tecnología nueva llevada a producción.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section" id="contacto">
+    <div class="container contact">
+      <div class="contact__text">
+        <p class="section__label">06 · Contacto</p>
+        <h2>¿Hablamos?</h2>
+        <p>Si buscas a alguien para desarrollo móvil, backend o full-stack, con ganas de aprender y de llevar las cosas hasta producción, aquí tienes mi perfil.</p>
+        <a class="contact__mail" href="mailto:xxcristianxx2004@gmail.com">xxcristianxx2004@gmail.com</a>
+        <dl class="contact__meta">
+          <dt>Teléfono</dt><dd><a href="tel:+34697883320">+34 697 88 33 20</a></dd>
+          <dt>Ubicación</dt><dd>Granada, España</dd>
+          <dt>GitHub</dt><dd><a href="https://github.com/dunkurunku" target="_blank" rel="noopener">github.com/dunkurunku</a></dd>
+        </dl>
+      </div>
+      <form class="form corner" id="contactForm">
+        <div class="form__row">
+          <label>Nombre<input type="text" name="nombre" placeholder="Tu nombre" required></label>
+          <label>Email<input type="email" name="email" placeholder="tu@correo.com" required></label>
+        </div>
+        <label>Mensaje<textarea name="mensaje" rows="6" placeholder="Cuéntame qué necesitas" required></textarea></label>
+        <button class="btn btn--primary" type="submit">Enviar mensaje</button>
+        <p class="form__hint">Se abrirá tu aplicación de correo con el mensaje preparado.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <span class="footer__brand">Cristian Ramón Noguera</span>
+    <span class="muted">© 2026 · Hecho con HTML, CSS y JavaScript</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
