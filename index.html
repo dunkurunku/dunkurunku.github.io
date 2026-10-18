@@ -131,7 +131,7 @@
   <section class="section" id="proyectos">
     <div class="container">
       <p class="section__label">02 · Proyectos</p>
-      <p class="section__note">Los dos primeros son productos desarrollados en GeoNotary S.L.: el código es propiedad de la empresa y está en repositorios privados, así que explico qué hace cada uno y qué parte he hecho yo. Los dos últimos son código público en GitHub.</p>
+      <p class="section__note">Los dos primeros son productos desarrollados en GeoNotary S.L.: el código es propiedad de la empresa y está en repositorios privados, así que explico qué hace cada uno y qué parte he hecho yo. Los demás son código público en GitHub.</p>
 
       <div class="projects">
         <article class="project corner">
@@ -206,6 +206,23 @@
             <div class="tags"><span>JavaScript</span><span>three.js</span><span>Leap Motion</span><span>Kotlin</span><span>3D</span></div>
             <div class="project__links">
               <a class="btn btn--small" href="https://github.com/dunkurunku/museo-minecraft" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+        <article class="project corner">
+          <div class="project__media project__media--img" aria-hidden="true"><img src="assets/biomasa-arquitecturas.png" alt=""></div>
+          <div class="project__body">
+            <p class="project__label">Proyecto 05 · código abierto · Kaggle</p>
+            <h3>Predicción de biomasa desde una foto</h3>
+            <p>Competición CSIRO – Image2Biomass en Kaggle: estimar cuánto pasto hay en una parcela a partir de una única imagen cenital, con solo 357 fotos de entrenamiento. Comparamos cuatro estrategias de visión por computador y escribimos la memoria como un artículo científico.</p>
+            <ul class="project__mine">
+              <li>Embeddings de DINOv2 con cabezas de regresión, destilación de conocimiento con información privilegiada, ensemble de ConvNeXt y EfficientNet, y descriptores clásicos con Random Forest.</li>
+              <li>Hallazgo clave: las particiones aleatorias inflaban el R² hasta 0,81 por la correlación entre fotos del mismo día; validando por fechas, el mejor modelo honesto da R² = 0,75.</li>
+              <li>Trabajo en grupo de Visión por Computador (UGR).</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>PyTorch</span><span>DINOv2</span><span>scikit-learn</span><span>Kaggle</span></div>
+            <div class="project__links">
+              <a class="btn btn--small" href="https://github.com/dunkurunku/image2biomass-kaggle" target="_blank" rel="noopener">Código y memoria</a>
             </div>
           </div>
         </article>
