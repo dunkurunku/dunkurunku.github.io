@@ -1,3 +1,8 @@
+// Anclas antiguas en español (enlaces del CV) sobre la versión inglesa
+const legacy = { proyectos: 'projects', experiencia: 'experience', formacion: 'education', 'sobre-mi': 'about', contacto: 'contact' };
+const alias = legacy[location.hash.slice(1)];
+if (alias && document.getElementById(alias)) location.replace(`#${alias}`);
+
 // Menú móvil
 const burger = document.getElementById('burger');
 const links = document.getElementById('navLinks');
@@ -25,9 +30,10 @@ if ('IntersectionObserver' in window) {
 document.getElementById('contactForm').addEventListener('submit', ev => {
   ev.preventDefault();
   const f = new FormData(ev.target);
-  const subject = encodeURIComponent(`Contacto desde el portfolio: ${f.get('nombre')}`);
+  const en = document.documentElement.lang === 'en';
+  const subject = encodeURIComponent(`${en ? 'Contact from the portfolio' : 'Contacto desde el portfolio'}: ${f.get('nombre')}`);
   const body = encodeURIComponent(`${f.get('mensaje')}\n\n— ${f.get('nombre')} (${f.get('email')})`);
-  window.location.href = `mailto:xxcristianxx2004@gmail.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:crisrn04@icloud.com?subject=${subject}&body=${body}`;
 });
 
 // Lluvia de código en la portada
