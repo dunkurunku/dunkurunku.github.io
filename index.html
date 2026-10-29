@@ -11,7 +11,7 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230d1b2a'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' fill='%237ec9ff' text-anchor='middle'%3ECR%3C/text%3E%3C/svg%3E">
   <link rel="alternate" hreflang="es" href="https://dunkurunku.github.io/es/">
   <link rel="alternate" hreflang="en" href="https://dunkurunku.github.io/">
-  <link rel="stylesheet" href="styles.css?v=10">
+  <link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body>
 
@@ -188,13 +188,30 @@
           </div>
         </article>
         <article class="project corner">
+          <div class="project__media project__media--vault" aria-hidden="true"><span>Evidence Vault</span></div>
+          <div class="project__body">
+            <p class="project__label">Project 04 · open source</p>
+            <h3>Evidence Vault API</h3>
+            <p>REST API to keep files as evidence: every file is registered with its SHA-256 digest and a timestamp, and every action is appended to a chain of custody that detects tampering.</p>
+            <ul class="project__mine">
+              <li>Hash-chained chain of custody: each event stores the hash of the previous one, so a direct edit in the database is detected.</li>
+              <li>JWT authentication, isolation between users and document summaries with the Claude API.</li>
+              <li>16 automated tests with pytest, a Docker image and continuous integration with GitHub Actions.</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span><span>pytest</span></div>
+            <div class="project__links">
+              <a class="btn btn--small btn--big" href="https://github.com/dunkurunku/evidence-vault-api" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="project corner">
           <div class="project__media project__media--video" aria-hidden="true">
             <video controls preload="metadata" playsinline poster="">
               <source src="assets/museo-demo.mp4" type="video/mp4">
             </video>
           </div>
           <div class="project__body">
-            <p class="project__label">Project 04 · open source</p>
+            <p class="project__label">Project 05 · open source</p>
             <h3>Interactive museum with Leap Motion</h3>
             <p>A Minecraft-themed museum where visitors interact without touching anything: web kiosks controlled by hand through a Leap Motion sensor and three.js, plus a companion Android app with a QR scanner, inventory and achievements.</p>
             <ul class="project__mine">
@@ -210,7 +227,7 @@
         <article class="project corner">
           <div class="project__media project__media--comp" aria-hidden="true"><span>Compiler</span></div>
           <div class="project__body">
-            <p class="project__label">Project 05 · open source</p>
+            <p class="project__label">Project 06 · open source</p>
             <h3>Compiler with Flex and Bison</h3>
             <p>A complete compiler in C for a small imperative language: lexer, LALR(1) parser with error recovery, semantic analysis with a symbol table and nested scopes, intermediate code generation as quadruples and final translation to C compiled with gcc.</p>
             <ul class="project__mine">
